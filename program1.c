@@ -27,7 +27,6 @@ msgid=msgget(123, IPC_CREAT|IPC_EXCL|0600);
 if(msgid==-1)
 {
 printf("Blad!\n");
-exit(1);
 }
 else
 {
@@ -36,7 +35,6 @@ m=msgsnd(msgid, &obiekt, n, 0);
 if(m==-1)
 {
 printf("Blad!");
-exit(1);
 }
 }
 return 0;
