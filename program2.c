@@ -15,7 +15,7 @@ struct str obiekt;
 int msgid;
 msgid=msgget(123, IPC_CREAT|IPC_EXCL|0600);
 int n;
-obiekt.tab=(char*)malloc(n*sizeof(char))
+obiekt.tab=(char*)malloc(n*sizeof(char));
 int u=msgscv(msgid, &obiekt, n, 0, 0);
 int i;
 if(msgid==-1)
