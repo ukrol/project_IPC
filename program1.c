@@ -18,7 +18,7 @@ scanf("%d",&tablica[n]);
 struct s obiekt;
 obiekt.tab=(char*)malloc(n*sizeof(char));
 int i;
-for(i=0, i<n, i++)
+for(i=0; i<n; i++)
 {
 obiekt.tab[i]=tablica[i];
 }
@@ -26,7 +26,7 @@ int msgid;
 msgid=msgget(123, IPC_CREAT|IPC_EXCL|0600);
 if(msgid==-1)
 {
-printf{("Blad!\n");
+printf("Blad!\n");
 exit(1);
 }
 else
