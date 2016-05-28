@@ -21,14 +21,12 @@ int i;
 if(msgid==-1)
 {
 printf("Blad!\n");
-exit(1);
 }
 else
 {
 if(u==-1)
 {
 printf("Blad!\n");
-exit(1);
 }
 else
 {
