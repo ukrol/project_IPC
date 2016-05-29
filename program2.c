@@ -45,6 +45,7 @@ else
 printf("Wyraz niepoprawny!\n");
 }
 }
+}
 else
 {
 printf("Wyraz niepoprawny!\n");
@@ -74,4 +75,5 @@ if(k==-1)
 printf("Blad!\n");
 }
 return 0;
+}
 }
