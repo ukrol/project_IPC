@@ -2,6 +2,8 @@
 #include <sys/types.h>
 #include <sys/ipc.h>
 #include <sys/msg.h>
+#include <unistd.h>
+#include <fcntl.h>
 
 struct str
 {
@@ -50,7 +52,7 @@ printf("Wyraz niepoprawny!\n");
 }
 int k;
 int f;
-f=open("wyraz.data",O_RDWR|O_CREAT|S_IRWXU);
+f=open("wyraz.data", O_RDWR|O_CREAT|S_IRWXU);
 if(f==-1)
 {
 printf("Blad!\n");
